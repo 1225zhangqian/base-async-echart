@@ -313,11 +313,11 @@ var rectCharts = {
     var $green = '<span class="green"></span>'
     var $yellow = '<span class="yellow"></span>'
     var $gray = '<span style="background:#eee"></span>'
-    for (var i = 0; i <parseInt(height/17); i++) {
-      for(var j = 0; j< parseInt(firstWidth/17); j++){
+    for (var i = 0; i < parseInt(height/17); i++) {
+      for(var j = 0; j < parseInt(firstWidth/17); j++){
         $div.find('.span-container :eq(0)').append(data[0].percent==0?$gray:$green)
       }
-      for(var k = 0; k< parseInt(secondWidth/17); k++){
+      for(var k = 0; k < parseInt(secondWidth/17); k++){
         $div.find('.span-container :eq(1)').append(data[1].percent==0?$gray:$yellow)
       }
     }
